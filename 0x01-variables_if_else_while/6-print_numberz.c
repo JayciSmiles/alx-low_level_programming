@@ -1,15 +1,17 @@
 #include <stdio.h>
-
 /**
  * main - main function
- * Return: always 0
+ * Return: Always
  */
 int main(void)
 {
-	int num;
+	int h = 0;
 
-	for (num = 0; num < 10; num++)
-		putchar(num + '0');
-	putchar("\n");
+	while (h < 10)
+	{
+		putchar(47 + h);
+		h++;
+	}
+	putchar('\n');
 	return (0);
 }
