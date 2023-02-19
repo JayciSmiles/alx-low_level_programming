@@ -6,14 +6,16 @@
  */
 int main(void)
 {
-	int num;
 	char c;
 
-	for (num = 0; num < 10; num++)
-		putchar (num % 10 + '0');
-	for (c = 'a'; c <= 'h'; c++)
+	for (c = '0'; c <= '9'; c++)
+	{
 		putchar (c);
+	}
+	for (c = 'a'; c <= 'h'; c++)
+	{
+		putchar (c);
+	}
 	putchar('\n');
-
 	return (0);
 }
