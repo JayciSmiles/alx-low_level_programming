@@ -1,17 +1,9 @@
 #include <stdio.h>
+
 /**
  * main - main function
- * Return: Always
+ * Return: always 0
  */
 int main(void)
 {
-	int h = 0;
-
-	while (h < 10)
-	{
-		putchar(47 + h);
-		h++;
-	}
-	putchar('\n');
-	return (0);
-}
+	putchar((nu	putchar
