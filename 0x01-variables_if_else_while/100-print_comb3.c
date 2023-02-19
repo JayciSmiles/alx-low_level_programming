@@ -1,35 +1,29 @@
 #include <stdio.h>
-#include <stdlib.h>
 /**
  * main - main function
- * Return: Always 0
+ *
  */
+
 int main(void)
 {
-	int e;
-	int c = 0;
+	char c;
 
-	while (c < 0)
-	{
-		e = 0;
-		while (e < 10)
+	int d;
+
+	c = 'a';
+	d = 0;
+	while
+		(d < 10)
 		{
-			if (c != e && c < e)
-			{
-				putchar('0' + c);
-				putchar('0' + e);
-
-				if (e + c != 17)
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
-				e++;
-
-			}
+			putchar(d + '0');
+			d++;
+		}
+	while
+		(c <= 'e')
+		{
+			putchar(c);
 			c++;
 		}
-		putchar('\n');
-		return (0);
+	putchar('\n');
+	return (0);
 }
