@@ -8,28 +8,30 @@
 
 int main(void)
 {
-	int a;
-	int b;
-	int c;
+	int s = 0, e = 7, s2 = 1, e2 = 8, s3 = 2, e3 = 9;
 
-	for (a = '0'; a < '9'; a++)
+	while (s <= e)
 	{
-		for (b = 1; b < '9'; b++)
+		s2 = s + 1;
+		while (s2 <= e2)
 		{
-			for (c = 1; c < '9'; c++)
+			s3 = s2 + 1;
+			while (s3 <= e3)
 			{
-				if ((b != a) != c)
+				putchar(s + '0');
+				putchar(s2 + '0');
+				putchar(s3 + '0');
+
+				if (s != e)
 				{
-					putchar(a);
-					putchar(b);
-					putchar(c);
-					if (a == '7' && b == '8')
-					continue;
 					putchar(',');
 					putchar(' ');
 				}
+				s3++;
 			}
+			s2++;
 		}
+		s++;
 	}
 	putchar('\n');
 	return (0);
