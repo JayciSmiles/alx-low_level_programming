@@ -2,28 +2,30 @@
 /**
  * main - main function
  *
+ * Return: Always 0
  */
 
 int main(void)
 {
-	char c;
+	int i;
+	int c;
 
-	int d;
-
-	c = 'a';
-	d = 0;
-	while
-		(d < 10)
+	for (i = 0; i < 10; i++)
+	{
+		for (c = 1; c < 10; c++)
 		{
-			putchar(d + '0');
-			d++;
+			if (i < c && i != c)
+			{
+				putchar(i + '0');
+				putchar(c + '0');
+				if (i + c != 17)
+				{
+				putchar(',');
+				putchar(' ');
+				}
+			}
 		}
-	while
-		(c <= 'e')
-		{
-			putchar(c);
-			c++;
-		}
+	}
 	putchar('\n');
 	return (0);
 }
