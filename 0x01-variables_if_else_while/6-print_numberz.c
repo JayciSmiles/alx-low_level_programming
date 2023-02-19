@@ -6,4 +6,14 @@
  */
 int main(void)
 {
-	putchar((nu	putchar
+	int c = 0;
+
+	while (c < 10)
+	{
+		putchar(48 + c);
+		c++;
+	}
+
+	putchar('\n');
+	return (0);
+}
