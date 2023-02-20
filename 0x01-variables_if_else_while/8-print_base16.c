@@ -6,16 +6,24 @@
  */
 int main(void)
 {
-	char c;
+	int c = 0, e = 9;
 
-	for (c = '0'; c <= '9'; c++)
+	while (c <= e)
 	{
-		putchar (c);
+		putchar(c + '0');
+		c++;
 	}
-	for (c = 'a'; c <= 'h'; c++)
+
+	c = 97;
+	e = 102;
+
+	while (c <= e)
 	{
-		putchar (c);
+		putchar(c);
+		c++;
 	}
+
 	putchar('\n');
+
 	return (0);
 }
