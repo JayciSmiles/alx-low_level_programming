@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * void positive_or_negative - checks for positive or negative numbers
+ * positive_or_negative - checks if given number is +, - or 0
  * @i: the number to be checked
  *
  * REturn: always 0
@@ -10,9 +10,9 @@
 void positive_or_negative(int i)
 {
 	if (i < 0)
-		printf("%d is negative", i);
-	else if
-	{
-		printf("%d is positive", i);
-	}
+		printf("%d is negative\n", i);
+	else if (i > 0)
+		printf("%d is positive\n", i);
+	else
+		printf("%d is zero\n", i);
 }
