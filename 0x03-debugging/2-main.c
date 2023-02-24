@@ -12,7 +12,7 @@ int main(void)
 	int largest;
 
 
-	a = 972;
+	a = 0;
 	b = -98;
 	c = 0;
 
